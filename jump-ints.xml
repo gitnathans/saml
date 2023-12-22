@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor
+	xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" entityID="IdP Entity ID">
+	<md:IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+		<md:KeyDescriptor use="signing">
+			<ds:KeyInfo
+				xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+				<ds:X509Data>
+					<ds:X509Certificate>MIIFejCCA2KgAwIBAgIUStuWHx27ePFb3gTQwQ/Fj8EUCqAwDQYJKoZIhvcNAQELBQAwdzELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNPMRAwDgYDVQQHEwdCb3VsZGVyMRIwEAYDVQQKEwlKdW1wQ2xvdWQxGTAXBgNVBAsTEEp1bXBDbG91ZFNBTUxJZFAxGjAYBgNVBAMTEUp1bXBDbG91ZFNBTUxVc2VyMB4XDTIzMTIyMjE1MjI1NFoXDTI4MTIyMjE1MjI1NFowdzELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNPMRAwDgYDVQQHEwdCb3VsZGVyMRIwEAYDVQQKEwlKdW1wQ2xvdWQxGTAXBgNVBAsTEEp1bXBDbG91ZFNBTUxJZFAxGjAYBgNVBAMTEUp1bXBDbG91ZFNBTUxVc2VyMIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEA24QYizLR2X3kbIjaHu5rxAHu27x9HW9x9FBU04NhIFgdoq4TmgBZcBP45KJRlpggyBQeuQzadt/TdjVDn42qWdGwQNgTRZog9oEBEaDE995xaFzkVrqitOjyykVpJOoWPjCFuisLdNcJ15jM1IFYXPgXcbTnODZwCFfo95SxOol3V2MUhipY9WoX3BC6J6stiIKkXmsifhShHmLtvJUWCPpBN7dnBNxHES69zXeNpKHQB8t48cddFU2Q03TrFmbZl7T+i/MVYkEXR/5UxwPWWowGfvOMUaqQfwuYK+XBh+3/JCipZMeeKwNm37IpJOy+xQM93dr9nhDZeLX11XflydnidJhhTAN+maY5djhY2DKfzRGS2+hqfM1dw6IyUbNPJMLhiMaXurL/76l51aC55tk5PijkU364W5J89oh70MAefqVGEg3tZJYA+E1GiXChxh+slbAe/yYAhwCxFrqn6b937DB1LpczrU8kgDy+M/z1SbmpQgl/odm1g+bpyn+Z3mFsi4FkvRlWcUUYzTSJr9t2CpL2zAsdad7oyWqim/aKthfimhz0O/f8ta98r8mI/kedCN4d9c0klGICGVQzl0aCwFeRh2iwe+8dijI4U/rCbE1S70lDGcWVZ5eCQG55KJjypyMfkYsEDtxsastzm17YSUNghfGQMry7nxjIpn8CAwEAATANBgkqhkiG9w0BAQsFAAOCAgEAjDBy18y7bA2SxfX+GX06vuQfRU0lYaG1Mg+fX8EZGgv/RFengY04b6PTuaNKyW1hYw77dsxF5/bNZXHSQso6magtCWfVv3krnLerOvjEnVe9iDE3y3JW6WlgcxX5QRAG87Zn0f4dyJqpA+FZpzTkMhEwJsY9XRPrCyRk/7CAOpxja9JB3N9i5MGGtUgOtAMBXlEMhh9jnNuSaAtr+GRTU0umtb/nShSaRK8Eb1xTVZGBMS14uu9MZMI0LnFJRy9jQ9VQovcVrBY1ST5WkwgPVXkIm8TLbuqQAuRxR+/i+Fo9xi0D92j7UsYUg1u6C7h2eE0sFO4xGWrAFxLfqSuwbT7/o9l3nZJu8Vj1FIVnwl9FvzYZeGN4IrCkH1NU8Zi1Hcm/R+RQ8FPDKOV1y70OxFrZf0W7XU4BJSJKCz7VYVkyAjh6PrXDTyAwkoKArymnXwzk6WHNLmf0KWAlX4SjO8icH5XXFC78gBzZwpacTLEOk/g4uLfZ+WupROfxCyltPUSJqzOTNMrHGpHfw18sSJBFRdluk7hCP65eSWYZExrNiuDFEp8j+gFZ9dBGe+NUawSHktTIj12GjK6K4h+2InMjW1yp9UGLfh7KxPtjA1qNXFHU0TbXPtjDGOOQVRQtzeebViD84TuUBJw+TO+/m7YacAFxJsmsn0fYFH5vcQM=</ds:X509Certificate>
+				</ds:X509Data>
+			</ds:KeyInfo>
+		</md:KeyDescriptor>
+		<md:NameIDFormat>urn:oasis:names:tc:SAML:1.0:nameid-format:unspecified</md:NameIDFormat>
+		<md:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://sso.jumpcloud.com/saml2/jump-int"/>
+	</md:IDPSSODescriptor>
+</md:EntityDescriptor>
